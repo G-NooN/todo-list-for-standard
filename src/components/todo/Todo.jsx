@@ -2,12 +2,12 @@ function Todo({ todos, setTodos, checkDone }) {
   return (
     <div>
       <h2>{!checkDone ? "Working" : "Done"}</h2>
-      <div>
+      <div className="grid-container">
         {todos
           .filter((todo) => todo.isDone === checkDone)
           .map((todo) => {
             return (
-              <div key={todo.id}>
+              <div key={todo.id} className="todo-item">
                 <h3>{todo.title}</h3>
                 <p>{todo.contents}</p>
                 <button
