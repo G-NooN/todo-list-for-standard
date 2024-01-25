@@ -27,6 +27,8 @@ function InputArea({ todos, setTodos }) {
       };
       setTodos([...todos, newTodo]);
       alert("추가되었습니다.");
+      setTitle("");
+      setContents("");
     }
   };
 
