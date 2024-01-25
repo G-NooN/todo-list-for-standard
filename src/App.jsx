@@ -1,5 +1,6 @@
 import InputArea from "components/todo/InputArea";
 import TodoList from "components/todo/TodoList";
+import Footer from "components/layout/Footer";
 import { useState } from "react";
 import "./App.css";
 
@@ -9,12 +10,8 @@ function App() {
   return (
     <div className="layout">
       <InputArea todos={todos} setTodos={setTodos} />
-
-      {/* TodoList */}
       <TodoList todos={todos} setTodos={setTodos} />
-
-      {/* Footer */}
-      <div></div>
+      <Footer />
     </div>
   );
 }
